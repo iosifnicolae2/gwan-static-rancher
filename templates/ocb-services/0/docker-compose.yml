@@ -1,6 +1,3 @@
-version: '2'
-services:
-
   database:
     image: registry.gitlab.com/averri/codex-db
     restart: unless-stopped
