@@ -1,0 +1,8 @@
+name: OCB Services
+description: |
+  # Description of the Catalog Entry
+version: # Version of the Catalog to be used
+category: services
+maintainer: Alexandre Verri
+license: Apache 2.0
+projectURL: https://gitlab.com/averri/ocb-catalog
