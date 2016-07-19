@@ -1,6 +1,5 @@
   database:
     image: registry.gitlab.com/averri/codex-db
-    restart: unless-stopped
     environment:
      - MYSQL_ROOT_PASSWORD=zagbabyt
     ports:
@@ -11,7 +10,6 @@
 
   giacoop:
     image: registry.gitlab.com/averri/giacoop
-    restart: unless-stopped
     environment:
      - "JAVA_OPTS=-XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=30 -XX:+UseG1GC -XX:+UseCompressedOops 
          -Djava.security.egd=file:/dev/./urandom 
@@ -29,7 +27,6 @@
 
   emanager:
     image: registry.gitlab.com/averri/ocb-manager
-    restart: unless-stopped
     environment:
          - "JAVA_OPTS=-XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=30 -XX:+UseG1GC -XX:+UseCompressedOops
              -Djava.security.egd=file:/dev/./urandom
@@ -47,7 +44,6 @@
 
   ocbweb:
     image: registry.gitlab.com/mfalzetta/ocbweb
-    restart: unless-stopped
     ports:
      - 80:80
     volumes:
