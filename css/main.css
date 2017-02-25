@@ -225,6 +225,7 @@ h2.projects-title{
 }
 .section#projects>.container{
       width: 1024px;
+      overflow: hidden;
 }
 .project-description>h3{
       font-size: 2em;
