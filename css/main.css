@@ -27,7 +27,7 @@ div.logo>a{
   width:900px;
   margin:0 auto;
   max-width: 100%;
-  padding:20px 30px;
+  padding:20px 30px;iosf
   box-sizing: border-box;
 }
 
@@ -483,3 +483,9 @@ margin-right: 2%;
       display: block;
     }
   }
+.upwork-icon{
+  display: inline-block;
+height: 100%;
+width: 97px;
+margin-left: 11px;
+}
