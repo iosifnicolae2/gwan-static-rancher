@@ -48,7 +48,7 @@ a{
   z-index: 9;
   padding-top: 15px;
   opacity: 4;
-  z-index: 2000000000;
+  z-index: 2;
   position: fixed;
   margin-top: 0px;
   top: 0;
@@ -121,9 +121,10 @@ a.menu-chat.navbar_link {}
 }
 .project-img{
   float: left;
-  width: 38%;
-  overflow: hidden;
-  margin-left: -4%;
+      width: 38%;
+      overflow: hidden;
+      /* margin-left: -4%; */
+      margin-top: 14px;
 }
 .project-img>img{/* margin-left: 15%; */width: 100%;/* max-height: 169px; *//* position: absolute; */}
 .project-description{
@@ -173,7 +174,8 @@ margin-right: 5%;
   /* max-width: 33.33%; */
   box-sizing: border-box;
   height: 100%;
-  margin: -9px -7px 0 -7px;
+  /*margin: -9px -7px 0 -7px;*/
+  margin:2px;
 }
 .project-gallery>img.active{
   background: rgba(0, 0, 0, 0.54);
@@ -234,6 +236,7 @@ margin-top: -1px;
   box-sizing: border-box;
   font-weight: 500;
   border-radius: 2px;
+
 }
 .button{
   /* padding:5px 6px; */
@@ -265,7 +268,7 @@ h2.projects-title{
 }
 .project-description>h3{
       font-size: 2em;
-      margin: 52px 21px 0px 19px;
+      margin: 29px 21px 0px 19px;
       font-weight: 300;
       float: left;
 }
@@ -370,6 +373,9 @@ float: left;
 }
 .more_projects{
       text-align: center;
+      float: left;
+width: 100%;
+margin-top: 46px;
 }
 #photoviewer{
   position: fixed;
@@ -396,11 +402,11 @@ float: left;
   opacity: 1;
 }
 #photoviewer-img{
-  max-height: 89%;
+  max-height: 99%;
   margin: 0 auto;
   position: relative;
   margin-top: 0.3%;
-  max-width: 89%;
+  max-width: 99%;
 }
 .section_ref{
   float: left;
@@ -427,7 +433,7 @@ float: left;
     }
     .logo h2{
       padding: 0;
-      margin: 21px 15px 0 15px;
+      margin: 0px 15px 0 15px;
     }
     .right-navbar{
       width: 100%;
@@ -519,9 +525,6 @@ margin-right: 2%;
     .section#projects .projects-container:nth-child(2n){
       padding-left: 27px;
     }
-    .project-img>img{
-          margin-left: -18px;
-    }
 
 }
 @media only screen
@@ -604,4 +607,27 @@ background: #5555f5;
 }
 .right-navbar>a:hover .social_ic{
   fill: #5f5b56;
+}
+#close_photo{
+  color: white;
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      padding: 5px;
+      z-index: 9999999999;
+}
+
+@media screen and (max-width: 680px){
+  .project-description>h3,a.gplay-link{
+    margin-left:0px;
+  }
+  #aripi img.img-tgl{
+        padding-left: 23px;
+  }
+  #fastsquare img.img-tgl,#slicker img.img-tgl{
+        margin-left: -30px;
+  }
+}
+#email_bottom:hover{
+  cursor: pointer;
 }

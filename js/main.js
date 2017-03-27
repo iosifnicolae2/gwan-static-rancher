@@ -13,7 +13,7 @@ photoviewer_img = document.getElementById('photoviewer-img');
 
 
   var img_tgls = document.getElementsByClassName("img-tgl");
-
+document.getElementById("close_photo").addEventListener('click',close_photoviewer,false);
 
   var navbar_links = document.getElementsByClassName("navbar_link");
   for (var i = 0; i < navbar_links.length; i++)
@@ -23,14 +23,16 @@ photoviewer_img = document.getElementById('photoviewer-img');
 for (var i = 0; i < img_tgls.length; i++)
     img_tgls[i].addEventListener('click', open_image, false);
 
-    photoviewer.addEventListener('click',function(){
-      photoviewer.className="";
-    },false);
+    photoviewer.addEventListener('click',close_photoviewer,false);
     photoviewer_img.addEventListener('click',function(e){
     e.stopPropagation();
     },false);
 
 
+}
+
+function close_photoviewer(){
+  photoviewer.className="";
 }
 
 var trackOutboundLink = function(url,redirect) {
@@ -63,10 +65,6 @@ window.addEventListener('load', onLoad, false);
 function fadeOut(el){
   el.style.display = "none";
 }
-// c = element to scroll to or top position in pixels
-// e = duration of the scroll in ms, time scrolling
-// d = (optative) ease function. Default easeOutCuaic
-function scrollTo(c,e,d){d||(d=easeOutCuaic);var a=document.documentElement;if(0===a.scrollTop){var b=a.scrollTop;++a.scrollTop;a=b+1===a.scrollTop--?a:document.body}b=a.scrollTop;0>=e||("object"===typeof b&&(b=b.offsetTop),"object"===typeof c&&(c=c.offsetTop),function(a,b,c,f,d,e,h){function g(){0>f||1<f||0>=d?a.scrollTop=c:(a.scrollTop=b-(b-c)*h(f),f+=d*e,setTimeout(g,e))}g()}(a,b,c,0,1/e,20,d))};
 function easeOutCuaic(t){
     t--;
     return t*t*t+1;
