@@ -34,6 +34,9 @@ for (var i = 0; i < img_tgls.length; i++)
 }
 
 var trackOutboundLink = function(url,redirect) {
+  if(!ga){
+    if(redirect)document.location = url;
+  }
    ga('send', 'event', 'outbound', 'click', url, {
      'transport': 'beacon',
      'hitCallback': function(){if(redirect)document.location = url;}
