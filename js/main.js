@@ -1,5 +1,13 @@
 var photoviewer,photoviewer_img;
 onLoad = function() {
+
+  var imgDefer = document.getElementsByTagName('img');
+for (var i=0; i<imgDefer.length; i++) {
+if(imgDefer[i].getAttribute('data-src')) {
+imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+} }
+
+
 photoviewer = document.getElementById('photoviewer');
 photoviewer_img = document.getElementById('photoviewer-img');
   // window.onscroll = function() {
