@@ -5,18 +5,18 @@
       G-wan static provisioned from Git repo
   uuid: g-wan-static-0
   questions:
-    - variable: "port"
-      description: "Port where G-WAN will listen."
-      label: "Number of Exosphere Nodes:"
-      required: true
-      type: "string"
     - variable: "git-repo"
       description: "Use url of you repository. Ex. https://<username>:<password>@git.mailo.ml/<user>/<repo>.git"
-      label: "Number of Exosphere Nodes:"
+      label: "Git repo:"
+      required: true
+      type: "string"
+    - variable: "port"
+      description: "Port where G-WAN will listen."
+      label: "Port:"
       required: true
       type: "string"
     - variable: "public-html"
       description: "The path from your git repository where is the public_html folder. Ex: public_html"
-      label: "Number of Exosphere Nodes:"
+      label: "Public html"
       required: true
       type: "string"
