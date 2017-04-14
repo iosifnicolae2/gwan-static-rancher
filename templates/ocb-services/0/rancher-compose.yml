@@ -5,9 +5,31 @@
       G-wan static provisioned from Git repo
   uuid: g-wan-static-0
   questions:
-    - variable: "exo-scale"
-      description: "Number of exosphere nodes."
-      label: "Number of Exosphere Nodes:"
-      required: true
-      default: 1
-      type: "int"
+      - variable: "G_WAN_PORT"
+        label: "Port:"
+        description: "Port where G-WAN will listen."
+        type: "string"
+        default: "8080"
+        required: true
+      - variable: "G_WAN_CLONE_GIT"
+        label: "Github repository:"
+        description: "Use url of you repository. Ex. https://<username>:<password>@git.mailo.ml/<user>/<repo>.git"
+        type: "string"
+        required: true
+      - variable: "G_WAN_PUBLIC_HTL"
+        label: "Static files are at:"
+        description: "The path from your git repository where is the public_html folder. Ex: public_html"
+        default: '';
+        type: "string"
+        required: true
+
+      # g-wan:
+      #   scale: 1
+      #   health_check:
+      #     port: ${G_WAN_PORT}
+      #     interval: 2000
+      #     initializing_timeout: 1200000
+      #     unhealthy_threshold: 3
+      #     strategy: recreate
+      #     healthy_threshold: 2
+      #     response_timeout: 2000
