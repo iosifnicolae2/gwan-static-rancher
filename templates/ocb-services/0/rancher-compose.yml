@@ -5,18 +5,18 @@
       G-wan static provisioned from Git repo
   uuid: g-wan-static-0
   questions:
-    - variable: "G_WAN_PORT"
+    - variable: "G-WAN-PORT"
       label: "Port:"
       description: "Port where G-WAN will listen."
       type: "string"
       default: "8080"
       required: true
-    - variable: "G_WAN_CLONE_GIT"
+    - variable: "G-WAN_CLONE-GIT"
       label: "Github repository:"
       description: "Use url of you repository. Ex. https://<username>:<password>@git.mailo.ml/<user>/<repo>.git"
       type: "string"
       required: true
-    - variable: "G_WAN_PUBLIC_HTL"
+    - variable: "G_WAN-PUBLIC-HTML"
       label: "Static files are at:"
       description: "The path from your git repository where is the public_html folder. Ex: public_html"
       default: '';

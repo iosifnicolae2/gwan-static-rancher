@@ -11,13 +11,13 @@
   giacoop:
     image: registry.gitlab.com/averri/giacoop
     environment:
-     - "JAVA_OPTS=-XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=30 -XX:+UseG1GC -XX:+UseCompressedOops 
-         -Djava.security.egd=file:/dev/./urandom 
+     - "JAVA_OPTS=-XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=30 -XX:+UseG1GC -XX:+UseCompressedOops
+         -Djava.security.egd=file:/dev/./urandom
          -Djava.rmi.server.hostname=${HOSTNAME}
-         -Dcom.sun.management.jmxremote.port=7070 
-         -Dcom.sun.management.jmxremote.rmi.port=7070 
-         -Dcom.sun.management.jmxremote 
-         -Dcom.sun.management.jmxremote.authenticate=false 
+         -Dcom.sun.management.jmxremote.port=7070
+         -Dcom.sun.management.jmxremote.rmi.port=7070
+         -Dcom.sun.management.jmxremote
+         -Dcom.sun.management.jmxremote.authenticate=false
          -Dcom.sun.management.jmxremote.ssl=false"
     ports:
      - 8080:8080
