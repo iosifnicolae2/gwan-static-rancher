@@ -1,9 +1,9 @@
 .catalog:
-  name: Aytra
+  name: G-WAN-static
   version: 7.5
   description: |
-    Aytra Cloud enables our customers to fully realize the potential of cloud computing by allowing them to automatically migrate application workloads across public and private clouds to achieve an ideal balance of security, cost, and performance.
-  uuid: aytra-0
+      G-wan static provisioned from Git repo
+  uuid: g-wan-static-0
   questions:
     - variable: "exo-scale"
       description: "Number of exosphere nodes."
