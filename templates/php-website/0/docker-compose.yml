@@ -1,0 +1,9 @@
+g-wan-static:
+      restart: always
+      image: iosifnicolae2/httpd-git
+      ports:
+        - ${port}:80
+      environment:
+        CLONE_GIT: ${git_repo}
+        PORT: ${port}
+        CLONE_PUBLIC_HTML: ${public_html}

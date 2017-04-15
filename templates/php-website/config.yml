@@ -1,0 +1,6 @@
+name: G-WAN-static
+description: |
+  G-WAN is a fast webserver
+version: v1
+category: Applications
+maintainer: Iosif Nicolae <iosifnicolae2@gmail.com>
