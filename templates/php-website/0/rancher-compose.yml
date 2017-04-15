@@ -1,0 +1,22 @@
+.catalog:
+  name: Httpd - apache enviroment
+  version: 7.5
+  description: |
+     What is httpd?
+The Apache HTTP Server, colloquially called Apache, is a Web server application notable for playing a key role in the initial growth of the World Wide Web. Originally based on the NCSA HTTPd server, development of Apache began in early 1995 after work on the NCSA code stalled. Apache quickly overtook NCSA HTTPd as the dominant HTTP server, and has remained the most popular HTTP server in use since April 1996.
+  questions:
+    - variable: "git_repo"
+      description: "Use url of you repository. Ex. https://<username>:<password>@git.mailo.ml/<user>/<repo>.git"
+      label: "Git repo:"
+      required: true
+      type: "string"
+    - variable: "port"
+      description: "Port where G-WAN will listen."
+      label: "Port:"
+      required: true
+      type: "string"
+    - variable: "public_html"
+      description: "The path from your git repository where is the public_html folder. Ex: public_html"
+      label: "Public html"
+      required: false
+      type: "string"
