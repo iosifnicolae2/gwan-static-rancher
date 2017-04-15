@@ -4,6 +4,6 @@ g-wan-static:
       ports:
         - ${PORT}:80
       environment:
-        CLONE_GIT: ${GIT_REPO}
-        CLONE_PUBLIC_HTML: ${PUBLIC_HTML}
-#
+        CLONE_GIT: ${git-repo}
+        PORT: ${port}
+        CLONE_PUBLIC_HTML: ${public-html}
