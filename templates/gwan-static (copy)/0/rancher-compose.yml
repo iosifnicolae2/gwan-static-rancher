@@ -1,0 +1,21 @@
+.catalog:
+  name: G-WAN-static
+  version: 7.5
+  description: |
+      G-wan static provisioned from Git repo
+  questions:
+    - variable: "git_repo"
+      description: "Use url of you repository. Ex. https://<username>:<password>@git.mailo.ml/<user>/<repo>.git"
+      label: "Git repo:"
+      required: true
+      type: "string"
+    - variable: "port"
+      description: "Port where G-WAN will listen."
+      label: "Port:"
+      required: true
+      type: "string"
+    - variable: "public_html"
+      description: "The path from your git repository where is the public_html folder. Ex: public_html"
+      label: "Public html"
+      required: false
+      type: "string"
