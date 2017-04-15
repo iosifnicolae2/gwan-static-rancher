@@ -12,7 +12,7 @@
     - variable: "port"
       description: "Port where G-WAN will listen."
       label: "Port:"
-      required: false
+      required: true
       type: "string"
     - variable: "public-html"
       description: "The path from your git repository where is the public_html folder. Ex: public_html"
