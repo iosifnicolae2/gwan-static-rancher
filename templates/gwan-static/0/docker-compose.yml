@@ -1,8 +1,9 @@
 g-wan-static:
       restart: always
-      build: .
+      image: iosifnicolae2/gwan-static
       ports:
-        - "8999:80"
+        - ${PORT}":80"
       environment:
-        CLONE_GIT: ${G_WAN_CLONE_GIT}
-        CLONE_PUBLIC_HTML: ${G_WAN_PUBLIC_HTL}
+        CLONE_GIT: ${GIT_REPO}
+        CLONE_PUBLIC_HTML: ${PUBLIC_HTML}
+#
