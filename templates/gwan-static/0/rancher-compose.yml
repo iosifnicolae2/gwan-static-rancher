@@ -4,7 +4,7 @@
   description: |
       G-wan static provisioned from Git repo
   questions:
-    - variable: "git-repo"
+    - variable: "git_repo"
       description: "Use url of you repository. Ex. https://<username>:<password>@git.mailo.ml/<user>/<repo>.git"
       label: "Git repo:"
       required: true
@@ -14,7 +14,7 @@
       label: "Port:"
       required: true
       type: "string"
-    - variable: "public-html"
+    - variable: "public_html"
       description: "The path from your git repository where is the public_html folder. Ex: public_html"
       label: "Public html"
       required: false
