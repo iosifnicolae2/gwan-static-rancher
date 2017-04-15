@@ -1,6 +1,0 @@
-name: Apache image
-description: |
-  Apache webserver for Rancher
-version: v1
-category: Webserver
-maintainer: Iosif Nicolae <iosifnicolae2@gmail.com>
